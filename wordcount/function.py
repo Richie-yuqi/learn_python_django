@@ -5,7 +5,7 @@ def home(request):
 	return render(request, 'home.html') 
 
 
-def count(request):
+def count(request): 
 	user_text = request.GET['text']
 	total_count = len(user_text)
 
@@ -20,4 +20,8 @@ def count(request):
 	      
 	return render(request, 'count.html',
 		{'text':user_text,'totalcount':total_count,'worddict':word_dict,'sorted':sort})
+
+
+def about(request):
+	return render(request, 'about.html') 
  
