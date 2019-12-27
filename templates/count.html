@@ -1,0 +1,12 @@
+<h1>统计结果字数为{{ totalcount }}个字</h1>
+<h2>你的文本</h2>
+{{ text }}
+<br>
+{{ worddict }}
+<br>
+{{ sorted }}
+<br>
+{% for key,value in sorted %}
+{{ key }}-{{ value }}
+<br>
+{% endfor %}
